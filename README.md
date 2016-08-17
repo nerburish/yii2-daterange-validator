@@ -73,7 +73,7 @@ Also, we can change the separator character. Ex: 12-08-2014 / 17-08-2015
 	public function rules()
 	{
 		return [
-			[['created_at'], DateRangeValidator::className(), 'format' => 'php:d-m-Y', 'separator' => ' / ', ]
+			[['created_at'], DateRangeValidator::className(), 'format' => 'php:d-m-Y', 'separator' => ' / ']
 		];
 	}
 	
