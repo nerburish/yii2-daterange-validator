@@ -1,0 +1,21 @@
+{
+    "name": "nerburish/yii2-daterange-validator",
+    "description": "Adds a daterange validator that allows to validate if a model attribute is a valid date range format. Specially usefull if you want to use a DateRangePicker widget and you want to filter by from/until values",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","validator","date","daterange"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "nerburish",
+            "email": "nerburish@hotmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "nerburish\\daterangevalidator\\": ""
+        }
+    }
+}
