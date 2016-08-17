@@ -27,7 +27,7 @@ Exemple: Filter an attribute model by date range
 -----
 
 Imagine we have a model with a 'created_at' attribute, and we want to filter that timestamp in our grid by a date range.
-In our grid we have implemented a field or widget like kartik DateRangePicker(see http://demos.krajee.com/date-range) that fills the 'created_at' input with a date range format
+In our grid we have implemented a field or widget like kartik DateRangePicker (see http://demos.krajee.com/date-range) that fills the 'created_at' input with a date range format
 Ex: 12/08/2014 to 17/08/2015
 
 We need to go to the search model and add the rule to the model.
