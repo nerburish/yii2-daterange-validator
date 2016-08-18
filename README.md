@@ -11,13 +11,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist nerburish/yii2-daterange-validator "*"
+php composer.phar require --prefer-dist nerburish/yii2-daterange-validator "dev-master"
 ```
 
 or add
 
 ```
-"nerburish/yii2-daterange-validator": "*"
+"nerburish/yii2-daterange-validator": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
