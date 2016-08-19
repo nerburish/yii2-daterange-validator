@@ -3,6 +3,11 @@ Yii2-daterange-validator
 Daterange validator that allows to validate if a model attribute is a valid date range format. 
 Specially usefull if you want to use a DateRangePicker widget and you want to filter by from/until values
 
+[![Latest Stable Version](https://poser.pugx.org/nerburish/yii2-daterange-validator/v/stable)](https://packagist.org/packages/nerburish/yii2-daterange-validator)
+[![Total Downloads](https://poser.pugx.org/nerburish/yii2-daterange-validator/downloads)](https://packagist.org/packages/nerburish/yii2-daterange-validator)
+[![Latest Unstable Version](https://poser.pugx.org/nerburish/yii2-daterange-validator/v/unstable)](https://packagist.org/packages/nerburish/yii2-daterange-validator)
+[![License](https://poser.pugx.org/nerburish/yii2-daterange-validator/license)](https://packagist.org/packages/nerburish/yii2-daterange-validator)
+
 Installation
 ------------
 
