@@ -28,19 +28,24 @@ class DateRangeValidator extends Validator
      *
      * If not set, will be used the format defined in formatter component in the same way as DateValidator does
      * See DateValidator format: http://www.yiiframework.com/doc-2.0/yii-validators-datevalidator.html#
-     */	
-	public $format;
+     */
+    public $format;
+	
+	/**
+     * @var string the date format for database field
+     */
+    public $dbFormat = 'U';
 
     /**
      * @var string expected to split the from date and until date.
-	 * If not set, will be used ' to ' by default
+     * If not set, will be used ' to ' by default
      */	
-	public $separator = ' to ';
+    public $separator = ' to ';
 	
     /**
      * @var string attribute name of the model passed where the from date timestamp will be assigned
      */	
-	public $fromDateAttribute = 'fromDate';
+    public $fromDateAttribute = 'fromDate';
 
     /**
      * @var string attribute name of the model passed where the until date timestamp will be assigned
@@ -107,8 +112,8 @@ class DateRangeValidator extends Validator
 				$endUntilDay->modify('tomorrow');
 				$endUntilDay->modify('1 second ago');
 
-				$model->{$this->fromDateAttribute} = $beginFromDay->format('U');
-				$model->{$this->untilDateAttribute} = $endUntilDay->format('U');			
+				$model->{$this->fromDateAttribute} = $beginFromDay->format($this->dbFormat);
+				$model->{$this->untilDateAttribute} = $endUntilDay->format($this->dbFormat);			
 			} elseif ($this->type == DateValidator::TYPE_DATETIME) {
 				$model->{$this->fromDateAttribute} = $validationModel->{$this->fromDateAttribute};
 				$model->{$this->untilDateAttribute} = $validationModel->{$this->untilDateAttribute};				
